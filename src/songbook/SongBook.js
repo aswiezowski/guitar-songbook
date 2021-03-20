@@ -7,7 +7,7 @@ function SongBook() {
     const [songs, setSongs] = useState([]);
 
     useEffect(() => {
-        axios.get(process.env.REACT_APP_BACKEND_URL+"/songs")
+        axios.get("/songs")
             .then(response => setSongs(response.data.songs));
     }, [])
     songs.sort((song1, song2) => song1.name.localeCompare(song2.name, "pl", {numeric: true}));

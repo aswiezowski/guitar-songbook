@@ -27,7 +27,7 @@ const AddSong = () => {
 
     const saveSong = (event) => {
         event.preventDefault();
-        axios.post(process.env.REACT_APP_BACKEND_URL+"/songs", { name: songName, chords, format: songFormat })
+        axios.post("/songs", { name: songName, chords, format: songFormat })
             .then(function (response) {
                 if (response.status === 201) {
                     setSongSaved(true);

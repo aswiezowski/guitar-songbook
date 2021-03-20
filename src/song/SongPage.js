@@ -7,7 +7,7 @@ const SongPage = () => {
     let { songName } = useParams();
     const [chords, setChords] = useState("");
     useEffect(() => {
-        axios.get(process.env.REACT_APP_BACKEND_URL+"/chords/" + songName)
+        axios.get("/chords/" + songName)
             .then(response => {
                 setChords(response.data)
             })

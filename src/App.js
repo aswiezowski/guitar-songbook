@@ -9,6 +9,10 @@ import {
   Route,
   NavLink
 } from "react-router-dom";
+import axios from 'axios';
+
+axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL || "";
+
 
 function App() {
   return (
