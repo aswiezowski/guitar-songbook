@@ -67,6 +67,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
+# Running docker
+`docker build -t songbook --build-arg REACT_APP_BACKEND_URL="http://localhost:8081" .`
+`docker run -p 8080:80 songbook`
+
 # Credits
 
 Favicon by Darrin Loeliger, US  
