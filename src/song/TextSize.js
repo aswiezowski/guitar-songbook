@@ -31,8 +31,8 @@ const TextSize = (props) => {
     }
 
     return (<div>
-        <button className="button" onClick={increaseFontSize}>🗚</button>
-        <button className="button" onClick={decreaseFontSize}>🗛</button>
+        <button className="button" onClick={increaseFontSize}>A<sup>+</sup></button>
+        <button className="button" onClick={decreaseFontSize}>A<sup>-</sup></button>
     </div>);
 }
 

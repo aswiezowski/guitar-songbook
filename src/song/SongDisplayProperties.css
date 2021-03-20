@@ -1,17 +1,22 @@
 .song-display-properties{
     float: right;
-    margin-right: 8px;
+    margin-right: 16px;
+    position: fixed;
+    right: 0px;
 }
 
 .button {
     display: block;
-    background: none;
     border: none;
-    font-size: 16px;
-    width: 32px;
+    font-size: 18px;
     text-align: center;
+    margin-top: 16px;
+    background: #ffffff8a;
+    border-radius: 32px;
+    width: 32px;
 }
 
 .button:hover {
     background-color: whitesmoke;
+    border-radius: 32px;
 }
