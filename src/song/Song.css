@@ -1,0 +1,16 @@
+.chord{
+    font-weight: bold;
+}
+
+.chorus{
+    background-color: rgb(242, 246, 250);
+}
+
+.song{
+    text-align: center;
+}
+
+.songContent{
+    text-align: left;
+    display: inline-block;
+}

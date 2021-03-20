@@ -1,25 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SongBook from './songbook/SongBook'
+import AddSong from './AddSong'
+import SongPage from './song/SongPage'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <nav className="menu">
+          <ul>
+            <li>
+              <NavLink exact to="/">Song book</NavLink>
+            </li>
+            <li>
+              <NavLink to="/add-song">Add song</NavLink>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path="/add-song">
+            <AddSong />
+          </Route>
+          <Route path="/:songName">
+            <SongPage />
+          </Route>
+          <Route path="/">
+            <SongBook />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
