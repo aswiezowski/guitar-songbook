@@ -11,12 +11,12 @@ const SongPage = () => {
             .then(response => {
                 setChords(response.data)
             })
-    }, [chords])
+    }, [songName])
 
     const format = songName.split('.').pop();
 
     return (
-        <Song chords={chords} format={format} />
+        <Song chords={chords} format={format} songName={songName} />
     );
 }
 

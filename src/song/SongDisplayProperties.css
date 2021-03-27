@@ -14,6 +14,7 @@
     background: #ffffff8a;
     border-radius: 32px;
     width: 32px;
+    padding: 0px;
 }
 
 .button:hover {

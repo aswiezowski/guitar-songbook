@@ -25,7 +25,7 @@ function Song(props) {
 
     return (
         <div className="song">
-            <SongDisplayProperties setFontSize={setFontSize} />
+            <SongDisplayProperties setFontSize={setFontSize} songName={props.songName} />
             <div className="songContent" dangerouslySetInnerHTML={disp} style={{ fontSize: fontSize + "px" }} />
         </div>
     );

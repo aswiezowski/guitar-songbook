@@ -1,7 +1,8 @@
-FROM node:14-slim as build-step
+FROM node:15-slim as build-step
 RUN mkdir /app
 WORKDIR /app
 COPY package.json /app
+COPY package-lock.json /app
 RUN npm install
 COPY . /app
 ARG REACT_APP_BACKEND_URL

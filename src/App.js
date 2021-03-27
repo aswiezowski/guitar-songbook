@@ -10,6 +10,7 @@ import {
   NavLink
 } from "react-router-dom";
 import axios from 'axios';
+import CurrentSong from './CurrentSong';
 
 axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL || "";
 
@@ -26,11 +27,17 @@ function App() {
             <li>
               <NavLink to="/add-song">Add song</NavLink>
             </li>
+            <li>
+              <NavLink to="/current-song">Current song</NavLink>
+            </li>
           </ul>
         </nav>
         <Switch>
           <Route path="/add-song">
             <AddSong />
+          </Route>
+          <Route path="/current-song">
+            <CurrentSong />
           </Route>
           <Route path="/:songName">
             <SongPage />
