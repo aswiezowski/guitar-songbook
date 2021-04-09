@@ -39,7 +39,7 @@ function App() {
           <Route path="/current-song">
             <CurrentSong />
           </Route>
-          <Route path="/:songName">
+          <Route path="/song/:songName">
             <SongPage />
           </Route>
           <Route path="/">

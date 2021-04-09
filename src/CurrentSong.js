@@ -17,7 +17,7 @@ const CurrentSong = () => {
     console.log(currentSong);
     return (
         <div>
-            {!!currentSong && <Redirect to={"/" + currentSong} />}
+            {!!currentSong && <Redirect to={"/song/" + currentSong} />}
             {!currentSong && !loading &&
                 <div>
                     No song set yet
