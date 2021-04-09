@@ -22,13 +22,13 @@ function App() {
         <nav className="menu">
           <ul>
             <li>
-              <NavLink exact to="/">Song book</NavLink>
+              <NavLink exact to="/">Songs</NavLink>
             </li>
             <li>
-              <NavLink to="/add-song">Add song</NavLink>
+              <NavLink to="/add-song">Add</NavLink>
             </li>
             <li>
-              <NavLink to="/current-song">Current song</NavLink>
+              <NavLink to="/current-song">Ongoing</NavLink>
             </li>
           </ul>
         </nav>
