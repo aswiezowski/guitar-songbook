@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const AddSong = () => {
     const [chords, setChords] = useState("");
     const [songName, setSongName] = useState("");
-    const [songFormat, setSongFormat] = useState("chordpro");
+    const [songFormat, setSongFormat] = useState("ultimateguitar");
     const [songSaved, setSongSaved] = useState(false);
     const [songSavedName, setSongSavedName] = useState("");
     const [songSavedNameFormat, setSongSavedFormat] = useState("");
