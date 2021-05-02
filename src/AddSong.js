@@ -80,6 +80,7 @@ const AddSong = () => {
                     <br />
                     <input type="submit" value="Add" onClick={saveSong} />
                 </form>
+                <div><a href="https://github.com/martijnversluis/ChordSheetJS#regular-chord-sheets" target="_blank">Check formats at ChordSheetJS page</a></div>
             </div>
             <div>
                 Preview:
