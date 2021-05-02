@@ -50,7 +50,7 @@ const AddSong = () => {
     }
 
     return (
-        <div>
+        <div className="add-song">
             <div className="add-song-container">
                 {songSaved &&
                     <div>
@@ -82,7 +82,7 @@ const AddSong = () => {
                 </form>
                 <div><a href="https://github.com/martijnversluis/ChordSheetJS#regular-chord-sheets" target="_blank">Check formats at ChordSheetJS page</a></div>
             </div>
-            <div>
+            <div className="add-song-container">
                 Preview:
                 <Song chords={chords} format={songFormat} />
             </div>

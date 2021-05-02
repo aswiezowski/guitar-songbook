@@ -1,4 +1,7 @@
+.add-song{
+    display: flex;
+}
+
 .add-song-container{
-    float: left;
     padding: 12px;
 }

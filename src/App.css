@@ -1,3 +1,11 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
 .column {
   display: inline-block;
   margin-right: 2px;
@@ -8,8 +16,15 @@
 }
 
 .menu {
-  background-color: rgb(238, 245, 251);
   margin-bottom: 4px;
+}
+
+.menu {
+  background-color: rgb(238, 245, 251);
+}
+
+.dark .menu {
+  background-color:#393e46
 }
 
 .menu ul {
@@ -34,6 +49,25 @@
   background-color: rgb(194, 218, 240);
 }
 
+.dark .menu a:hover{
+  background-color: #00adb5;
+}
+
 a.active {
   font-weight: bold;
+}
+
+.body{
+  min-height: 100vh;
+}
+
+.dark {
+  background-color: #121212;
+  background-size: cover;
+  color: #eeeeee;
+}
+
+.dark a:link, .dark a:visited, .dark a:hover, .dark a:active{
+  color: #eeeeee;
+  text-decoration: none;
 }

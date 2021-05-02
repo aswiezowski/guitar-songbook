@@ -21,3 +21,8 @@
     background-color: whitesmoke;
     border-radius: 32px;
 }
+
+.dark .button{
+    background: #393e46;
+    color: #eeeeee;
+}

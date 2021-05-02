@@ -6,6 +6,10 @@
     background-color: rgb(242, 246, 250);
 }
 
+.dark .chorus{
+    background-color: #242424;
+}
+
 .song{
     text-align: center;
 }
