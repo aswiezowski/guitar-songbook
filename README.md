@@ -75,3 +75,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 Favicon by Darrin Loeliger, US  
 https://thenounproject.com/term/song-book/900777/
+
+# Color palette
+https://colorhunt.co/palette/94114

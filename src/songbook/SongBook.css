@@ -1,3 +1,27 @@
 .songBook {
     list-style: decimal;
 }
+
+.songBook li{
+    margin-bottom: 8px;
+}
+
+.light .songBook a:link, .light .songBook a:visited, .light .songBook a:hover, .light .songBook a:active{
+    color: black;
+    text-decoration: none;
+}
+
+.light .songBook a:hover{
+    color: #66bfbf;
+    text-decoration: none;
+}
+
+.dark .songBook a:link, .dark .songBook a:visited, .dark .songBook a:hover, .dark .songBook a:active{
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.dark .songBook a:hover{
+    color: #00adb5;
+    text-decoration: none;
+}
