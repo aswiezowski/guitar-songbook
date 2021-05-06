@@ -11,7 +11,9 @@ function Song(props) {
             case 'chordpro':
                 return new ChordSheetJS.ChordProParser();
             case 'ultimateguitar':
-                return new ChordSheetJS.UltimateGuitarParser();
+                const parser = new ChordSheetJS.UltimateGuitarParser();
+                parser.parseNonEmptyLine = parseNonEmptyLineWithLowercaseChords;
+                return parser;
             case 'regular':
                 return new ChordSheetJS.ChordSheetParser();
             default:
@@ -29,6 +31,18 @@ function Song(props) {
             <div className="songContent" dangerouslySetInnerHTML={disp} style={{ fontSize: fontSize + "px" }} />
         </div>
     );
+}
+
+const CHORD_LINE_REGEX = /^\s*((([A-Ga-g])(#|b)?([^/\s]*)(\/([A-Ga-g])(#|b)?)?)(\s|$)+)+(\s|$)+/;
+function parseNonEmptyLineWithLowercaseChords(line) {
+    this.chordLyricsPair = this.songLine.addChordLyricsPair();
+
+    if (CHORD_LINE_REGEX.test(line) && this.hasNextLine()) {
+        const nextLine = this.readLine();
+        this.parseLyricsWithChords(line, nextLine);
+    } else {
+        this.chordLyricsPair.lyrics = `${line}`;
+    }
 }
 
 export default Song;
