@@ -3,6 +3,7 @@ import './App.css';
 import SongBook from './songbook/SongBook'
 import AddSong from './AddSong'
 import SongPage from './song/SongPage'
+import EditSong from './EditSong'
 import {
   BrowserRouter as Router,
   Switch,
@@ -57,6 +58,9 @@ function App() {
           <Switch>
             <Route path="/add-song">
               <AddSong />
+            </Route>
+            <Route path="/edit-song/:editedSongName">
+              <EditSong />
             </Route>
             <Route path="/current-song">
               <CurrentSong />

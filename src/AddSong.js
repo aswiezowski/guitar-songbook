@@ -54,7 +54,7 @@ const AddSong = () => {
             <div className="add-song-container">
                 {songSaved &&
                     <div>
-                        Song successfully saved: <Link to={songSavedName + "." + songSavedNameFormat}>{songSavedName}</Link>
+                        Song successfully saved: <Link to={"/song/" + songSavedName + "." + songSavedNameFormat}>{songSavedName}</Link>
                     </div>}
                 {errorResponse &&
                     <div>

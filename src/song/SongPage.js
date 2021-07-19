@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Song from './Song'
+import './SongPage.css'
 
 const SongPage = () => {
     let { songName } = useParams();
@@ -16,7 +17,10 @@ const SongPage = () => {
     const format = songName.split('.').pop();
 
     return (
-        <Song chords={chords} format={format} songName={songName} />
+        <div>
+            <Song chords={chords} format={format} songName={songName} />
+            <Link id="edit-song-link" to={"/edit-song/" + songName}>Edit</Link>
+        </div>
     );
 }
 

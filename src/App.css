@@ -37,6 +37,10 @@ html {
     display: inline;
 }
 
+a:link, a:visited, a:active{
+  color: #66BFBF;
+}
+
 .menu a{
   padding: 12px;
   text-decoration: none;
@@ -63,7 +67,6 @@ a.active {
   color: #eeeeee;
 }
 
-  
 .dark a:link, .dark a:visited, .dark a:active{
   color: #eeeeee;
 }
